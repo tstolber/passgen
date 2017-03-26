@@ -4,7 +4,8 @@ Created on Sun Mar  5 13:25:22 2017
 
 @author: Trevor Stolber
 
-V0.0.2 - 2017-03-25 - TWS - Initial revision for version control
+V0.0.2 - 2017-03-26 - TWS - Removed debug comments
+V0.0.1 - 2017-03-25 - TWS - Initial revision for version control
 
 passgen($chars) function
 Generates a random password of n characters from a list of possible characters
@@ -30,16 +31,13 @@ def passgen(chars):
         chars = 15
     i = 0   # Random Integer value pointer    
     j = 0   # loop counter 
-    # l = 0   # list counter
     l = [] #start list
     list = ["a", "b", "c", "d", "e", "f","g","h","i","j","k","l","m","n","o","p","q","r","s","t","u","v","w","x","y","z","A", "B", "C", "D", "E", "F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","0","1","2","3","4","5","6","7","8","9","!","@","#","$","%","^","&","*","(",")","-","+"]
     while (j < chars):
         i = randint(0,73) # hard coded dictionary length 
         l.append(list[i])
         j = j+1 # increment counter
-        # print (j, i, list[i])
-    pwd = ''.join(l)
-    # pwd = l        
+    pwd = ''.join(l)   #join new character to password string
     return pwd
 
 k = passgen(12)
