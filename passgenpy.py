@@ -4,7 +4,7 @@ Created on Sun Mar  5 13:25:22 2017
 
 @author: Trevor Stolber
 
-Passgen 
+V0.0.2 - 2017-03-25 - TWS - Initial revision for version control
 
 passgen($chars) function
 Generates a random password of n characters from a list of possible characters
